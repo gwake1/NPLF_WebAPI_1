@@ -9,6 +9,7 @@ namespace NPLF_WebAPI.Models
     {
         public int AgencyServiceID { get; set; }
         public int ZipCode { get; set; }
+        public bool ActiveServiceIndicator { get; set; }
         public virtual ICollection<ServiceCategory> ServiceCategoriess { get; set; }
     }
 }
