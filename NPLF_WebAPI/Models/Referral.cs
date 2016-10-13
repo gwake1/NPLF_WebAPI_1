@@ -17,6 +17,10 @@ namespace NPLF_WebAPI.Models
         public virtual AgencyEmployee AgencyEmployee {get; set;}
         [Required]
         public DateTime DateRequested { get; set; }
-        public bool ServiceDelivered { get; set; }
+        public DateTime DateServiceRendered { get; set; }
+        [Required]
+        public bool ServiceRendered { get; set; }
+        [Required]
+        public bool ServiceInProgress { get; set; }
     }
 }
