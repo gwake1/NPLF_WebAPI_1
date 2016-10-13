@@ -1,21 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace NPLF_WebAPI.Models
 {
     public class RegisteredClient
     {
+        [Key]
         public int      RegisteredClientID      { get; set; }
         public string   LastName                { get; set; }
         public string   FirstName               { get; set; }
+        [Required, MaxLength(3)]
         public int      AreaCode                { get; set; }
+        [Required, MaxLength(8)]
         public string   PhoneNumber1            { get; set; }
+        [Required, MaxLength(3)]
+        public int      AreaCode2               { get; set; }
+        [Required, MaxLength(8)]
         public string   PhoneNumber2            { get; set; }
+        [Required]
         public string   EmailAddress            { get; set; }
         public string   StreetAddress           { get; set; }
         public string   HouseNumber             { get; set; }
+        [Required, MaxLength(5)]
         public int      ZipCode                 { get; set; }
     }
 }
