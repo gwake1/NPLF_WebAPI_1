@@ -17,7 +17,8 @@ namespace NPLF_WebAPI.Models
         public string ContactFirstName { get; set; }
         public string AltContactLastName { get; set; }
         public string AltContactFirstName { get; set; }
-        public bool Hold { get; set; }
+        public bool AgencyActiveIndicator { get; set; }
+        public virtual ICollection<AgencyService> AgencyServices { get; set; }
 
     }
 }

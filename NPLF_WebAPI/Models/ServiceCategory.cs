@@ -8,7 +8,7 @@ namespace NPLF_WebAPI.Models
     public class ServiceCategory
     {
         public int ServiceCategoryID { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
+        public string ServiceCategoryName { get; set; }
+        public string ServiceDescription { get; set; }
     }
 }
