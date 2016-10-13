@@ -9,16 +9,16 @@ namespace NPLF_WebAPI.Models
         public int ReferralID { get; set; }
         [Required]
         public virtual RegisteredClient RegisteredClient { get; set; }
-        [Required]
+       
         public virtual Agency Agency { get; set; }
         [Required]
         public virtual ServiceCategory ServiceCategory { get; set; }
-        [Required]
+       
         public virtual AgencyEmployee AgencyEmployee {get; set;}
         [Required]
         public DateTime DateRequested { get; set; }
         public DateTime DateServiceRendered { get; set; }
-        [Required]
+       [Required]
         public bool ServiceRendered { get; set; }
         [Required]
         public bool ServiceInProgress { get; set; }

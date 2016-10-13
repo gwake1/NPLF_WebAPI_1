@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace NPLF_WebAPI.Models
 {
@@ -19,8 +20,10 @@ namespace NPLF_WebAPI.Models
         public string   PhoneNumber2            { get; set; }
         public string   EmailAddress            { get; set; }
         public string   StreetAddress           { get; set; }
-        public string   HouseNumber             { get; set; }
+        public string HouseNumber { get; set; }
+
         public int      ZipCode                 { get; set; }
         public string   Notes                   { get; set; }
+        public virtual ICollection<Referral> Referrals { get; set; }
     }
 }
